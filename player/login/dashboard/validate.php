@@ -33,7 +33,8 @@ if (isset($_POST['url']) && !empty($_POST['url'])) {
 }
 
 $token = generateRandomToken();
-echo json_encode(array("status" => "success", "message" => "", "token" => $token, "url" => $url, "accountType" => "growtopia"));
+
+// echo json_encode(array("status" => "success", "message" => "", "token" => $token, "url" => $url, "accountType" => "growtopia"));
 
 $udp_ip = '8.222.157.57';
 $udp_port = 1919;
